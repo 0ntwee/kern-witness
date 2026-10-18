@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kern-witness"
+version = "0.1.0"
+authors = [
+  { name="Semion", email="ontwee@github.com" },
+]
+description = "Immutable blockchain-style event logger for autonomous systems"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 (AGPL-3.0)",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: System :: Logging",
+]
+
+[project.scripts]
+kern-witness = "core.__main__:main"
